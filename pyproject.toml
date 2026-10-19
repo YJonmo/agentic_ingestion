@@ -1,0 +1,16 @@
+[project]
+name = "firma"
+version = "0.1.0"
+description = "Firm-wide business entity discovery and source triage tooling"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.32.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
