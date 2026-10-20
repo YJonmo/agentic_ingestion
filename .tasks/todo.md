@@ -2,6 +2,8 @@
 
 This file defines the work to be completed in sequence. Each task is meant to be executed by an agent or developer, with a clear checkpoint and validation step at the end of each task.
 
+Remember, by the end of these steps/tasks, you have made a knowledge graph so that it can be used as a database for question and answer and retrieval of information.
+
 ## Task 1: Repository bootstrap and project setup
 
 Goal: Create the project skeleton and the minimal tooling needed to run the pipeline locally.

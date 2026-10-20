@@ -76,6 +76,8 @@ This project has five parts and they are intentionally cumulative:
 
 The main thing we are evaluating is not whether you can write a parser for one source. It is whether your system can generalise: one engine with configs, not one script per source.
 
+Remember, by the end of these steps, you have made a knowledge graph so that it can be used as a database for question and answer and retrieval of information.
+
 ---
 
 ## Agent workflow required
