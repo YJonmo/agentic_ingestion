@@ -64,6 +64,17 @@ python -m firma.cli part4
 This reads the linked records and assembles one profile per canonical entity, with
 field-level confidence, provenance, and recorded disagreements.
 
+## Task 5: judgment and trade-offs
+
+Generate the final assessment report:
+
+```bash
+python -m firma.cli part5
+```
+
+This writes a concise two-page assessment to `WRITEUP.md` covering cost, agent design,
+source difficulty, scale, change management, and next steps.
+
 ## Project structure
 
 - `firma/` — project package

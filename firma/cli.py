@@ -5,6 +5,7 @@ from firma.part1 import run_part1
 from firma.part2 import run_part2
 from firma.part3 import run_part3
 from firma.part4 import run_part4
+from firma.part5 import run_part5
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -32,6 +33,12 @@ def build_parser() -> argparse.ArgumentParser:
     part4_parser.add_argument("--observations-dir", type=Path, default=Path("outputs/part2/observations"))
     part4_parser.add_argument("--links", type=Path, default=Path("outputs/part3/links.jsonl"))
     part4_parser.add_argument("--output-dir", type=Path, default=Path("outputs/part4"))
+
+    part5_parser = subparsers.add_parser("part5", help="Write the final assessment summary for the Firma project")
+    part5_parser.add_argument("--output", type=Path, default=Path("WRITEUP.md"))
+    part5_parser.add_argument("--source-manifest", type=Path, default=Path("outputs/part2/source_manifest.json"))
+    part5_parser.add_argument("--part3-summary", type=Path, default=Path("outputs/part3/summary.json"))
+    part5_parser.add_argument("--part4-summary", type=Path, default=Path("outputs/part4/summary.json"))
 
     return parser
 
@@ -83,6 +90,17 @@ def main() -> None:
         )
         print(f"Built {summary['profile_count']} company profiles.")
         print(f"Output written to {args.output_dir}")
+        return
+
+    if args.command == "part5":
+        report = run_part5(
+            output_path=args.output,
+            source_manifest_path=args.source_manifest,
+            part3_summary_path=args.part3_summary,
+            part4_summary_path=args.part4_summary,
+        )
+        print(f"Part 5 write-up generated at {args.output}")
+        print("Summary includes cost, agent design, hardest source, scale, and next steps.")
         return
 
     raise ValueError(f"Unsupported command: {args.command}")
