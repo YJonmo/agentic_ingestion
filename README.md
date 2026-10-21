@@ -41,6 +41,18 @@ fields that still fail are left unmapped. Mapping approval remains `pending` for
 review. Generated profiles, mappings, validation reports, and observations are written
 under `outputs/part2/`.
 
+## Task 3: cross-source linking
+
+After Part 2 has produced observation files, run the linking stage:
+
+```bash
+python -m firma.cli part3
+```
+
+This reads the observation JSONL files under `outputs/part2/observations`, proposes
+links for records that share the same canonical identifier or normalized legal name,
+and writes the results to `outputs/part3/`.
+
 ## Project structure
 
 - `firma/` — project package
