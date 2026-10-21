@@ -80,3 +80,26 @@ def test_langgraph_removes_mapping_that_fails_holdout(monkeypatch):
     assert result["revisions"][0]["removed_fields"] == ["ABN"]
     assert result["validation"]["checks"][0]["target_field"] == "legal_name"
     assert calls == [False, True]
+
+
+def test_extract_skips_invalid_identifier_values(monkeypatch):
+    source = {"source_id": "bad-abn-source", "title": "Bad ABN source", "format": "csv", "licence": "CC-BY"}
+    state = {
+        "source": source,
+        "records": [{"ABN": "0", "Company Name": "Example Pty Ltd"}],
+        "mapping": {
+            "fields": [
+                {"source_field": "ABN", "target_field": "abn", "section": "entity", "confidence": 0.9, "transformation": "digits_only"},
+                {"source_field": "Company Name", "target_field": "legal_name", "section": "entity", "confidence": 0.9, "transformation": "normalize_whitespace"},
+            ]
+        },
+    }
+
+    from firma.part2 import _extract
+
+    result = _extract({"source": source, "records": state["records"], "mapping": state["mapping"]})
+
+    observation = result["observations"][0]
+    assert "abn" not in observation["entity"]
+    assert observation["entity"]["legal_name"] == "Example Pty Ltd"
+    assert observation["observation"]["source_record_id"] == "bad-abn-source:0"

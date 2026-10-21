@@ -460,6 +460,8 @@ def _extract(state: AgentState) -> dict[str, Any]:
             if value in (None, ""):
                 continue
             normalized = _canonical_value(value, field["transformation"])
+            if not _value_valid(field["target_field"], normalized):
+                continue
             canonical[field["section"]][field["target_field"]] = normalized
             provenance[field["target_field"]] = {"source_field": field["source_field"],
                                                    "field_confidence": field["confidence"], "derivation_level": "L1"}
