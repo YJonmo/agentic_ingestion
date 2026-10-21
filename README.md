@@ -53,6 +53,17 @@ This reads the observation JSONL files under `outputs/part2/observations`, propo
 links for records that share the same canonical identifier or normalized legal name,
 and writes the results to `outputs/part3/`.
 
+## Task 4: company profiles
+
+After Part 3 has produced links, build merged company profiles:
+
+```bash
+python -m firma.cli part4
+```
+
+This reads the linked records and assembles one profile per canonical entity, with
+field-level confidence, provenance, and recorded disagreements.
+
 ## Project structure
 
 - `firma/` — project package

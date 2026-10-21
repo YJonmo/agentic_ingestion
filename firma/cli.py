@@ -4,6 +4,7 @@ from pathlib import Path
 from firma.part1 import run_part1
 from firma.part2 import run_part2
 from firma.part3 import run_part3
+from firma.part4 import run_part4
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -26,6 +27,11 @@ def build_parser() -> argparse.ArgumentParser:
     part3_parser = subparsers.add_parser("part3", help="Link observations across sources and emit an unlinked queue")
     part3_parser.add_argument("--observations-dir", type=Path, default=Path("outputs/part2/observations"))
     part3_parser.add_argument("--output-dir", type=Path, default=Path("outputs/part3"))
+
+    part4_parser = subparsers.add_parser("part4", help="Merge linked observations into company profiles with provenance")
+    part4_parser.add_argument("--observations-dir", type=Path, default=Path("outputs/part2/observations"))
+    part4_parser.add_argument("--links", type=Path, default=Path("outputs/part3/links.jsonl"))
+    part4_parser.add_argument("--output-dir", type=Path, default=Path("outputs/part4"))
 
     return parser
 
@@ -66,6 +72,16 @@ def main() -> None:
         )
         print(f"Loaded {summary['observations_loaded']} observations and proposed {summary['link_count']} links.")
         print(f"Unlinked queue contains {summary['unlinked_count']} records.")
+        print(f"Output written to {args.output_dir}")
+        return
+
+    if args.command == "part4":
+        summary = run_part4(
+            observations_dir=args.observations_dir,
+            links_path=args.links,
+            output_dir=args.output_dir,
+        )
+        print(f"Built {summary['profile_count']} company profiles.")
         print(f"Output written to {args.output_dir}")
         return
 
