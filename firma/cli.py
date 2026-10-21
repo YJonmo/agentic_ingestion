@@ -3,6 +3,7 @@ from pathlib import Path
 
 from firma.part1 import run_part1
 from firma.part2 import run_part2
+from firma.part3 import run_part3
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -21,6 +22,10 @@ def build_parser() -> argparse.ArgumentParser:
     part2_parser.add_argument("--output-dir", type=Path, default=Path("outputs/part2"))
     part2_parser.add_argument("--limit", type=int, default=6)
     part2_parser.add_argument("--sample-limit", type=int, default=1200)
+
+    part3_parser = subparsers.add_parser("part3", help="Link observations across sources and emit an unlinked queue")
+    part3_parser.add_argument("--observations-dir", type=Path, default=Path("outputs/part2/observations"))
+    part3_parser.add_argument("--output-dir", type=Path, default=Path("outputs/part3"))
 
     return parser
 
@@ -52,6 +57,16 @@ def main() -> None:
         print(f"Processed {len(report['results'])} sources with LangGraph and OpenAI.")
         print(f"Held-out validation passed for {valid_count}/{len(report['results'])} sources.")
         print(f"Output written to {args.output_dir}; mapping approval remains pending.")
+        return
+
+    if args.command == "part3":
+        summary = run_part3(
+            observations_dir=args.observations_dir,
+            output_dir=args.output_dir,
+        )
+        print(f"Loaded {summary['observations_loaded']} observations and proposed {summary['link_count']} links.")
+        print(f"Unlinked queue contains {summary['unlinked_count']} records.")
+        print(f"Output written to {args.output_dir}")
         return
 
     raise ValueError(f"Unsupported command: {args.command}")
