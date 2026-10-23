@@ -1,4 +1,4 @@
-# Firma
+# Agentic Data Ingestion
 
 This repository contains the early stages of the Firma dataset triage pipeline.
 
