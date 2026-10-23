@@ -2,6 +2,17 @@
 
 This repository contains the early stages of the Firma dataset triage pipeline.
 
+It extracts and normalizes entities into observations, proposes links between source
+records, and assembles profiles.
+
+- **Part 2** emits canonical observation JSONL files. These are extracted claims with
+	source metadata and provenance.
+- **Part 3** emits proposed record-to-record links in `links.jsonl`. Those links are
+	graph-like edges, but they are stored as JSONL.
+- **Part 4** creates merged company profiles with provenance and conflicts.
+
+The outputs are **graph-ready artifacts** for a downstream graph-building system.
+
 ## Setup
 
 ```bash
