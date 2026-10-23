@@ -6,6 +6,7 @@ from firma.part2 import run_part2
 from firma.part3 import run_part3
 from firma.part4 import run_part4
 from firma.part5 import run_part5
+from firma.export import export_ingestion
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -39,6 +40,13 @@ def build_parser() -> argparse.ArgumentParser:
     part5_parser.add_argument("--source-manifest", type=Path, default=Path("outputs/part2/source_manifest.json"))
     part5_parser.add_argument("--part3-summary", type=Path, default=Path("outputs/part3/summary.json"))
     part5_parser.add_argument("--part4-summary", type=Path, default=Path("outputs/part4/summary.json"))
+
+    export_parser = subparsers.add_parser("export", help="Bundle graph inputs for downstream ingestion")
+    export_parser.add_argument("--observations-dir", type=Path, default=Path("outputs/part2/observations"))
+    export_parser.add_argument("--source-manifest", type=Path, default=Path("outputs/part2/source_manifest.json"))
+    export_parser.add_argument("--links", type=Path, default=Path("outputs/part3/links.jsonl"))
+    export_parser.add_argument("--profiles", type=Path, default=Path("outputs/part4/profiles.jsonl"))
+    export_parser.add_argument("--output-dir", type=Path, default=Path("outputs/ingestion"))
 
     return parser
 
@@ -101,6 +109,17 @@ def main() -> None:
         )
         print(f"Part 5 write-up generated at {args.output}")
         print("Summary includes cost, agent design, hardest source, scale, and next steps.")
+        return
+
+    if args.command == "export":
+        output_dir = export_ingestion(
+            observations_dir=args.observations_dir,
+            source_manifest_path=args.source_manifest,
+            links_path=args.links,
+            profiles_path=args.profiles,
+            output_dir=args.output_dir,
+        )
+        print(f"Graph-ingestion artifacts exported to {output_dir}")
         return
 
     raise ValueError(f"Unsupported command: {args.command}")

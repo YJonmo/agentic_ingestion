@@ -14,15 +14,19 @@ uv pip install -e .
 Run the discovery pipeline:
 
 ```bash
-python -m firma.cli part1 --min-records 200 --limit 50
+python -m firma.cli part1 --min-records 200 --limit 50 --search-terms "ABN"
 ```
+
 
 This will:
 - query the public CKAN portals,
 - collect at least 200 catalog entries,
 - score them for business-entity likelihood,
 - write the ranked shortlist to `outputs/part1/shortlist.csv` and JSONL files.
-
+  
+Searching for `ABN` tends to surface Australian business registers and datasets that
+identify organisations with an Australian Business Number, making the initial
+catalogue results more relevant than broad terms such as `business`.
 ## Task 2: schema inference and mapping
 
 Put `OPENAI_API_KEY` in the local `.env` file. Optionally set `OPENAI_MODEL`
@@ -63,6 +67,25 @@ python -m firma.cli part4
 
 This reads the linked records and assembles one profile per canonical entity, with
 field-level confidence, provenance, and recorded disagreements.
+
+## Export for graph ingestion
+
+After Parts 2–4 have completed, bundle the artifacts needed by the downstream graph
+repository:
+
+```bash
+python -m firma.cli export
+```
+
+The command copies (it does not remove the original stage outputs) these files into
+`outputs/ingestion/`:
+
+- `observations/` — canonical observation JSONL files
+- `source_manifest.json` — source metadata and Part 2 run results
+- `links.jsonl` — proposed record links and evidence
+- `profiles.jsonl` — assembled company profiles
+
+Use `--output-dir` or the individual input flags to select alternate paths.
 
 ## Task 5: judgment and trade-offs
 
