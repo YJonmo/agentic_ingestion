@@ -9,5 +9,4 @@ __pycache__/
 *.pyd
 .DS_Store
 .tasks
-outputs/
-scratch/
+outputs/*
