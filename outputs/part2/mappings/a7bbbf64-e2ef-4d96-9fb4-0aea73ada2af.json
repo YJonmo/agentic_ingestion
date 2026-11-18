@@ -1,0 +1,336 @@
+{
+  "source_id": "a7bbbf64-e2ef-4d96-9fb4-0aea73ada2af",
+  "source_title": "ASIC – Australian Financial Services Authorised Representative Dataset",
+  "format": "xlsx",
+  "fields": [
+    {
+      "source_field": "AFS_REP_NAME",
+      "target_field": "legal_name",
+      "section": "entity",
+      "confidence": 0.85,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The field AFS_REP_NAME contains the names of authorized representatives, which aligns with the definition of legal_name in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "AFS_REP_ABN",
+      "target_field": "abn",
+      "section": "entity",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The AFS_REP_ABN field contains Australian Business Numbers, which match the pattern defined for abn in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "AFS_REP_STATUS",
+      "target_field": "status",
+      "section": "entity",
+      "confidence": 0.75,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The AFS_REP_STATUS field contains values like 'Current' and 'Ceased', which can be mapped to the status enum values defined in the ontology.",
+      "transformation": "status_enum"
+    },
+    {
+      "source_field": "AFS_REP_ADD_LOCAL",
+      "target_field": "locality",
+      "section": "address",
+      "confidence": 0.8,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The AFS_REP_ADD_LOCAL field contains locality names, which corresponds to the locality field in the address ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "AFS_REP_ADD_STATE",
+      "target_field": "state",
+      "section": "address",
+      "confidence": 0.85,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The AFS_REP_ADD_STATE field contains state abbreviations that match the defined enum values for state in the ontology.",
+      "transformation": "status_enum"
+    },
+    {
+      "source_field": "AFS_REP_ADD_PCODE",
+      "target_field": "postcode",
+      "section": "address",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The AFS_REP_ADD_PCODE field contains postal codes, which aligns with the postcode field in the address ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "AFS_REP_ADD_COUNTRY",
+      "target_field": "country",
+      "section": "address",
+      "confidence": 0.8,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The AFS_REP_ADD_COUNTRY field consistently contains 'Australia', which aligns with the country field in the address ontology.",
+      "transformation": "identity"
+    }
+  ],
+  "unmapped_source_fields": [
+    "AFS_LIC_NUM",
+    "AFS_REP_ACN",
+    "AFS_REP_APPOINTED_BY",
+    "AFS_REP_CROSS_ENDORSE",
+    "AFS_REP_END_DT",
+    "AFS_REP_MAY_APPOINT",
+    "AFS_REP_NUM",
+    "AFS_REP_OTHER_ROLE",
+    "AFS_REP_RELATED_BN",
+    "AFS_REP_SAME_AUTH",
+    "AFS_REP_START_DT",
+    "APPLY",
+    "ARRANGE",
+    "ARRANGE_APPLY",
+    "ARRANGE_ISSUE",
+    "ARRANGE_UNDERWR",
+    "CLASSES",
+    "DEAL",
+    "DEAL_APPLY",
+    "DEAL_ISSUE",
+    "DEAL_UNDERWR",
+    "FIN",
+    "GENFIN",
+    "IDPS",
+    "ISSUE",
+    "MARKET",
+    "NONIDPS",
+    "REGISTER_NAME",
+    "SCHEME",
+    "TRUSTEE",
+    "UNDERWR",
+    "WSALE",
+    "_id"
+  ],
+  "llm_notes": [
+    "AFS_REP_ACN was left unmapped due to validation failures indicating a significant portion of invalid data."
+  ],
+  "approval": "pending",
+  "agent_framework": "LangGraph",
+  "model_provider": "OpenAI",
+  "model": "gpt-4o-mini",
+  "revision_history": [
+    {
+      "revision": 1,
+      "previous_fields": [
+        {
+          "source_field": "AFS_REP_NAME",
+          "target_field": "legal_name",
+          "section": "entity",
+          "confidence": 0.85,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The field AFS_REP_NAME contains the names of authorized representatives, which aligns with the definition of legal_name in the ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ABN",
+          "target_field": "abn",
+          "section": "entity",
+          "confidence": 0.9,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ABN field contains Australian Business Numbers, which match the pattern defined for abn in the ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ACN",
+          "target_field": "acn",
+          "section": "entity",
+          "confidence": 0.9,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ACN field contains Australian Company Numbers, which match the pattern defined for acn in the ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_STATUS",
+          "target_field": "status",
+          "section": "entity",
+          "confidence": 0.75,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_STATUS field contains values like 'Current' and 'Ceased', which can be mapped to the status enum values defined in the ontology.",
+          "transformation": "status_enum"
+        },
+        {
+          "source_field": "AFS_REP_ADD_LOCAL",
+          "target_field": "locality",
+          "section": "address",
+          "confidence": 0.8,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_LOCAL field contains locality names, which corresponds to the locality field in the address ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ADD_STATE",
+          "target_field": "state",
+          "section": "address",
+          "confidence": 0.85,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_STATE field contains state abbreviations that match the defined enum values for state in the ontology.",
+          "transformation": "status_enum"
+        },
+        {
+          "source_field": "AFS_REP_ADD_PCODE",
+          "target_field": "postcode",
+          "section": "address",
+          "confidence": 0.9,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_PCODE field contains postal codes, which aligns with the postcode field in the address ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ADD_COUNTRY",
+          "target_field": "country",
+          "section": "address",
+          "confidence": 0.8,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_COUNTRY field consistently contains 'Australia', which aligns with the country field in the address ontology.",
+          "transformation": "identity"
+        }
+      ],
+      "revised_fields": [
+        {
+          "source_field": "AFS_REP_NAME",
+          "target_field": "legal_name",
+          "section": "entity",
+          "confidence": 0.85,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The field AFS_REP_NAME contains the names of authorized representatives, which aligns with the definition of legal_name in the ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ABN",
+          "target_field": "abn",
+          "section": "entity",
+          "confidence": 0.9,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ABN field contains Australian Business Numbers, which match the pattern defined for abn in the ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_STATUS",
+          "target_field": "status",
+          "section": "entity",
+          "confidence": 0.75,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_STATUS field contains values like 'Current' and 'Ceased', which can be mapped to the status enum values defined in the ontology.",
+          "transformation": "status_enum"
+        },
+        {
+          "source_field": "AFS_REP_ADD_LOCAL",
+          "target_field": "locality",
+          "section": "address",
+          "confidence": 0.8,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_LOCAL field contains locality names, which corresponds to the locality field in the address ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ADD_STATE",
+          "target_field": "state",
+          "section": "address",
+          "confidence": 0.85,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_STATE field contains state abbreviations that match the defined enum values for state in the ontology.",
+          "transformation": "status_enum"
+        },
+        {
+          "source_field": "AFS_REP_ADD_PCODE",
+          "target_field": "postcode",
+          "section": "address",
+          "confidence": 0.9,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_PCODE field contains postal codes, which aligns with the postcode field in the address ontology.",
+          "transformation": "identity"
+        },
+        {
+          "source_field": "AFS_REP_ADD_COUNTRY",
+          "target_field": "country",
+          "section": "address",
+          "confidence": 0.8,
+          "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+          "rationale": "The AFS_REP_ADD_COUNTRY field consistently contains 'Australia', which aligns with the country field in the address ontology.",
+          "transformation": "identity"
+        }
+      ],
+      "removed_fields": [
+        "AFS_REP_ACN"
+      ],
+      "validation_failures": [
+        "AFS_REP_ACN"
+      ],
+      "notes": [
+        "AFS_REP_ACN was left unmapped due to validation failures indicating a significant portion of invalid data."
+      ]
+    }
+  ],
+  "validation": {
+    "holdout_rows": 400,
+    "checks": [
+      {
+        "source_field": "AFS_REP_NAME",
+        "target_field": "legal_name",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "AFS_REP_ABN",
+        "target_field": "abn",
+        "holdout_rows": 400,
+        "nonempty": 125,
+        "valid": 125,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "AFS_REP_STATUS",
+        "target_field": "status",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "AFS_REP_ADD_LOCAL",
+        "target_field": "locality",
+        "holdout_rows": 400,
+        "nonempty": 13,
+        "valid": 13,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "AFS_REP_ADD_STATE",
+        "target_field": "state",
+        "holdout_rows": 400,
+        "nonempty": 13,
+        "valid": 13,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "AFS_REP_ADD_PCODE",
+        "target_field": "postcode",
+        "holdout_rows": 400,
+        "nonempty": 13,
+        "valid": 13,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "AFS_REP_ADD_COUNTRY",
+        "target_field": "country",
+        "holdout_rows": 400,
+        "nonempty": 13,
+        "valid": 13,
+        "valid_ratio": 1.0,
+        "pass": true
+      }
+    ],
+    "failed_fields": [],
+    "passed": true,
+    "step": "unseen holdout sample"
+  }
+}

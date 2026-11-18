@@ -1,0 +1,51 @@
+id,title,organization,resource_formats,confidence,reason
+5bd7fcab-e315-42cb-8daf-50b7efc2027e,ABN Bulk Extract,Australian Business Register,"XML, PDF, ZIP, ZIP, CSV",0.94,ABN; ACN; business; business name; business register; entity; register; trading name
+7b8656f9-606d-4337-af29-66b89b2eeefb,ASIC - Company Dataset,Australian Securities and Investments Commission (ASIC),"PDF, CSV, ZIP",0.87,ABN; ACN; business; company; company name; company register; register
+8fc2e133-29f4-4123-a977-b245b32e62df,Australian Business Register - Statistics 2014-15 and 2015-16,Australian Business Register,"excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx)",0.6,ABN; business; business register; entity; register
+a7bbbf64-e2ef-4d96-9fb4-0aea73ada2af,ASIC – Australian Financial Services Authorised Representative Dataset,Australian Securities and Investments Commission (ASIC),"PDF, CSV, XLSX",0.56,ABN; ACN; business; business name; licensing; organisation
+1ca29b03-220d-4c19-b34e-c7932cd4508d,Victorian Government Schools ABNs,Department of Education,XLSX,0.54,ABN; business; business register; register
+fa0b0d71-b8b8-4af8-bc59-0b000ce0d5e4,ASIC – Credit Licensee Dataset,Australian Securities and Investments Commission (ASIC),"CSV, PDF, TSV, XLSX, CSV",0.5,ABN; ACN; business; business name; licensing
+bc515135-4bb6-4d50-957a-3713709a76d3,ASIC - Business Names Dataset,Australian Securities and Investments Commission (ASIC),"PDF, CSV, ZIP",0.46,ABN; business; business name
+3a3661a8-ee5d-4165-be5c-018634ca7202,ABN Lookup web services,Australian Business Register,XML,0.46,ABN; business; business register; register
+ff6905d6-9d5d-4ef1-8478-72b833864fb7,ACNC 2023 Annual Information Statement (AIS) Data,Australian Charities and Not-for-profits Commission (ACNC),"PDF, XLSX, CSV, XLSX, CSV, XLSX",0.42,ACN; charity; charity register; not-for-profit; organisation; register
+db8def1b-b3ba-4536-98eb-60c99e5495e5,ACNC 2021 Annual Information Statement (AIS) Data,Australian Charities and Not-for-profits Commission (ACNC),"PDF, XLSX, XLSX, XLSX, CSV, CSV",0.42,ACN; charity; charity register; not-for-profit; organisation; register
+28a94374-d516-4200-a6f8-c09e76f58cc5,ACNC 2020 Annual Information Statement (AIS) Data,Australian Charities and Not-for-profits Commission (ACNC),"PDF, XLSX, XLSX, xslx, CSV, CSV",0.42,ACN; charity; charity register; not-for-profit; organisation; register
+ab7eddce-84df-4098-bc8f-500d0d9776d1,ASIC - Australian Financial Services Licensee Dataset,Australian Securities and Investments Commission (ASIC),"CSV, TSV, XLSX, PDF",0.4,ABN; ACN; business; licensing
+a3b6d445-3a00-409a-8b49-53dc62b823bf,ASIC – Credit Representative Dataset,Australian Securities and Investments Commission (ASIC),"CSV, PDF, TSV, XLSX",0.36,ABN; ACN; business
+b050b242-4487-4306-abf5-07ca073e5594,ACNC Registered Charities,Australian Charities and Not-for-profits Commission (ACNC),"PDF, XLSX, CSV",0.36,ACN; charity; charity register; not-for-profit; register
+276ec1bc-4971-461c-88bc-be9f3c99a0f8,ACNC 2024 Annual Information Statement (AIS) Data,Australian Charities and Not-for-profits Commission (ACNC),"PDF, CSV, XLSX, CSV, XLSX, XLSX",0.36,ACN; charity; charity register; not-for-profit; register
+7c356598-b048-4c1e-862f-c936041e3d81,Research and Development tax incentive,Australian Taxation Office,"excel (.xlsx), excel (.xlsx), excel (xlsx)",0.34,ABN; ACN; entity
+c2524c87-cea4-4636-acac-599a82048a26,Corporate Tax Transparency,Australian Taxation Office,"excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), excel (.xlsx), XLSX, excel (.xlsx), excel (.xlsx), XLSX",0.33,ABN; company; entity
+37390371-9da4-42d8-9304-649c50090611,ASIC – Self-Managed Super Fund Auditor Dataset,Australian Securities and Investments Commission (ASIC),"PDF, CSV, XLSX",0.32,ABN; business; licensing
+f2b7c2c1-f4ef-4ae9-aba5-45c19e4d3038,ASIC – Financial Advisers Dataset,Australian Securities and Investments Commission (ASIC),"PDF, CSV, XLSX",0.32,ABN; business; licensing
+553b3049-2b8b-46a2-95e6-640d7986a8c1,National Public Toilet Map,"Department of Health, Disability and Ageing","CSV, PDF",0.3,ABN; licensing; organisation
+6bd73ac2-5e02-4db8-9cac-72feff8c4e29,Register of Third-Party Lobbyists,NSW Electoral Commission,website link,0.28,ABN; business
+49017fd0-e7be-4fc0-88c8-046fc366d980,IPGOD2022,IP Australia,"PDF, ZIP, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV",0.24,ABN; business
+5715b850-a989-4343-a1e8-e779ec729de4,IPGOD2021 [SUPERSEDED],IP Australia,".pdf, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, ZIP",0.24,ABN; business
+5ddbf57c-94c3-4dd2-b41c-c1e90b9a3841,IPGOD2020,IP Australia,"PDF, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV, CSV",0.24,ABN; business
+ccb9f9d1-5e77-49f7-a78d-7475c3da5362,Junior Minerals Exploration Incentive credit allocations,Australian Taxation Office,XLSX,0.2,ABN
+d61374dd-1a62-4132-913d-35d90cfdac81,Intellectual Property Longitudinal Research Data (IPLORD),IP Australia,"PDF, ZIP, CSV, CSV, CSV, CSV, CSV, CSV, CSV",0.2,ABN
+0ad1f78a-f05d-4641-a9b9-a092ed46f8fd,Groundwater Economic Elements Hunter NSW 20150520 PersRem v02,Bioregional Assessment Program,unknown,0.2,ABN
+cc9d8524-39d8-4374-84b9-20e9d1070e82,ACNC 2013 Annual Information Statement data,Australian Charities and Not-for-profits Commission (ACNC),"XLSX, PDF",0.18,ACN; charity; not-for-profit
+42bad3df-f2e0-4c9c-bef0-0a4328927718,Suitable Operator Register (SOR) for Environmentally Relevant Activities (ERAs),"Environment, Tourism, Science and Innovation",XLSX,0.09,corporation
+4d95cd0a-92fb-4853-a7a8-d48d6b22b5b5,Forestry Corporation of NSW Annual Report 2015-16,NSW Government,PDF,0.09,corporation
+7d670f88-97e0-45b6-a816-4fb7ab5f2ef2,Construction Spend Data FY2015-16,Department of Customer Service,"PDF, excel (.xlsx)",0.09,corporation
+749e324f-60dd-4a7b-9b24-b4c4baed6cf4,Personal Property Securities Register (PPSR) Statistics,Australian Financial Security Authority,"PDF, PDF, CSV, CSV, CSV, CSV, CSV, CSV, XLSX, XLSX",0.08,business
+cbc350fb-d09f-4a4b-bc56-3d8088f4aba9,VostroNet Pty Ltd - Declaration - 5 September 2024 - Rhodes, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF",0.04,premises
+1840d506-e62d-4926-ac70-d810dfbf8175,VostroNet Australia Pty Ltd - Anticipatory Notices - 6 June 2024, SIP Register - VostroNet (Australia) Pty Ltd,"PDF, ZIP, HTML, PDF, ZIP, ZIP",0.04,premises
+02203df0-befc-4a99-9637-ee275e664146,VostroNet (Australia)Pty Ltd - Anticipatory Notice - 28 August 2024 - Redcliffe, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF",0.04,premises
+c3dec02a-ed5d-4076-9f7a-68baf3916abc,VostroNet (Australia) Pty Ltd - Declaration - 6 April 2022- Epping NSW, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF, sld",0.04,premises
+9a2c095a-87e3-466f-8810-0b8d9bd2ec3a,VostroNet (Australia) Pty Ltd - Declaration - 30 August 2024- Dockland, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF",0.04,premises
+077b0e65-77c0-4548-97f9-a65332ea6e7a,VostroNet (Australia) Pty Ltd - Declaration - 22 January 2022 - Parramatta NSW, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF, excel (.xlsx)",0.04,premises
+1b8986ac-49cd-46e0-9e2d-619bcc40929e,VostroNet (Australia) Pty Ltd - Declaration - 17 November 2023 - Lidcombe NSW, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF",0.04,premises
+2c53a14f-72d8-47ff-93f0-6ca45b99b119,VostroNet (Australia) Pty Ltd - Declaration - 17 January 2022- Rhodes NSW, SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF, excel (.xlsx)",0.04,premises
+8d0910dd-e38e-42c1-92e8-452d5db70d60,VostroNet (Australia) Pty Ltd - Anticipatory notice - Adelaide SA - May 2022 (Declared 20 December 2024), SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF, excel (.xlsx)",0.04,premises
+13e97e20-3d0c-4edc-9471-b9ad62f69265,VostroNet (Australia) Pty Ltd - Anticipatory notice - 17 November 2023 -North Adelaide SA (Declared 4 August 2025), SIP Register - VostroNet (Australia) Pty Ltd,"zip mapinfo, PDF",0.04,premises
+8bb7ea33-f2a4-4c5d-97bd-f26c9845563f,Sensia Pty Ltd - Declarations (multiple) - February 2023,SIP Register – Net360 Pty Ltd (Formerly Sensia Pty Ltd),"PDF, zip mapinfo, XLSX, WMS, WFS, GeoJSON",0.04,premises
+6c5c19b1-3c62-4186-ad42-0fa06cab7ab2,MyPort Pty Ltd - The Corso - Anticipatory Notice- June 2024,SIP Register - Myport Pty Ltd,"zip mapinfo, PDF, zip mapinfo, PDF, ZIP",0.04,premises
+ba7ab8ca-1b17-4fcc-830f-06509a988ca7,MyPort Pty Ltd - Sunnybank QLD - Anticipatory Notice - June 2023 (Declared 5 December 2024),SIP Register - Myport Pty Ltd,"zip mapinfo, PDF",0.04,premises
+db0e7c4c-320c-41d4-80c7-91ba2db1777f,MyPort Pty Ltd - Anticipatory Notice - Ballarat St Brunswick VIC- July 2024 (Declared 17 December 2024),SIP Register - Myport Pty Ltd,"PDF, ZIP, zip mapinfo",0.04,premises
+b4cce8aa-ebdb-48e5-948c-0c9b64854402,Myport pty ltd - Alderley QLD - Anticipatory Notice July 2022 - (Varied on 18 September 2024) (Declared 15 April 2026),SIP Register - Myport Pty Ltd,"zip mapinfo, PDF, PDF, ZIP, WMS, WFS, GeoJSON",0.04,premises
+03af6b1c-b662-44d4-91f2-0c67935fc007,Lynham Networks Pty Ltd - Declaration - March 2023,SIP Register - Lynham Networks Pty Ltd,"zip mapinfo, PDF, excel (.xlsx), WMS, WFS, GeoJSON",0.04,premises
+7d7b0541-6e44-4598-9ba7-62eb3d68689c,Lynham Networks Pty Ltd - Anticipatory Notice - Templestowe VIC Oct 2021 (Declared 30 November 2025),SIP Register - Lynham Networks Pty Ltd,"zip mapinfo, PDF, excel (.xlsx), sld",0.04,premises
+1ccfa002-13de-465a-afee-1b4589b71b81,Lynham Networks Pty Ltd - Anticipatory Notice - Southbank Oct 2021,SIP Register - Lynham Networks Pty Ltd,"zip mapinfo, PDF, excel (.xlsx), sld, WMS, WFS, GeoJSON",0.04,premises

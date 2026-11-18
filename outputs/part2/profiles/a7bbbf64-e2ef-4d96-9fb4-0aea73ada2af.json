@@ -1,0 +1,489 @@
+{
+  "source_id": "a7bbbf64-e2ef-4d96-9fb4-0aea73ada2af",
+  "title": "ASIC – Australian Financial Services Authorised Representative Dataset",
+  "format": "xlsx",
+  "sample_record_count": 1200,
+  "fields": [
+    {
+      "name": "_id",
+      "non_null": 1200,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "name": "REGISTER_NAME",
+      "non_null": 1200,
+      "examples": [
+        "AFS Representative",
+        "AFS Representative",
+        "AFS Representative"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_NUM",
+      "non_null": 1200,
+      "examples": [
+        "001305985",
+        "001302220",
+        "001295216"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_LIC_NUM",
+      "non_null": 1200,
+      "examples": [
+        "000232496",
+        "000240549",
+        "000340965"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_NAME",
+      "non_null": 1200,
+      "examples": [
+        "Fleming, Anne-Louise Mary",
+        "Maher, Elisha",
+        "BALDWIN, Erin Dakota"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_ABN",
+      "non_null": 371,
+      "examples": [
+        "17924031513",
+        "53152250827",
+        "21002851416"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_ACN",
+      "non_null": 350,
+      "examples": [
+        "623039663",
+        "152250827",
+        "2851416"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_OTHER_ROLE",
+      "non_null": 69,
+      "examples": [
+        "Financial Adviser",
+        "Financial Adviser",
+        "Financial Adviser"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_START_DT",
+      "non_null": 1200,
+      "examples": [
+        "23/08/2023",
+        "08/03/2023",
+        "28/01/2022"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_STATUS",
+      "non_null": 1200,
+      "examples": [
+        "Ceased",
+        "Current",
+        "Ceased"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_END_DT",
+      "non_null": 1142,
+      "examples": [
+        "01/12/2023",
+        "02/07/2025",
+        "15/12/2022"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_ADD_LOCAL",
+      "non_null": 58,
+      "examples": [
+        "Ballarat",
+        "Sans Souci",
+        "Melbourne"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_ADD_STATE",
+      "non_null": 58,
+      "examples": [
+        "VIC",
+        "NSW",
+        "VIC"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_ADD_PCODE",
+      "non_null": 58,
+      "examples": [
+        "3350",
+        "2219",
+        "3000"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_ADD_COUNTRY",
+      "non_null": 58,
+      "examples": [
+        "Australia",
+        "Australia",
+        "Australia"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_CROSS_ENDORSE",
+      "non_null": 180,
+      "examples": [
+        "000232497~000237500~000238163~000238166~000426455~000426801~000474620~000498778~000510685",
+        "000239545",
+        "000234951"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_MAY_APPOINT",
+      "non_null": 1200,
+      "examples": [
+        "N",
+        "N",
+        "N"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_APPOINTED_BY",
+      "non_null": 363,
+      "examples": [
+        "000232496",
+        "000240549",
+        "000340965"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "FIN",
+      "non_null": 58,
+      "examples": [
+        "1",
+        "0",
+        "1"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "DEAL",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "APPLY",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "GENFIN",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "1",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ISSUE",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ARRANGE_APPLY",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ARRANGE_ISSUE",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ARRANGE_UNDERWR",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CLASSES",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "DEAL_APPLY",
+      "non_null": 58,
+      "examples": [
+        "1",
+        "1",
+        "1"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "DEAL_ISSUE",
+      "non_null": 58,
+      "examples": [
+        "1",
+        "0",
+        "1"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "DEAL_UNDERWR",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "IDPS",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "MARKET",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "NONIDPS",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "SCHEME",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "TRUSTEE",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "WSALE",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ARRANGE",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "UNDERWR",
+      "non_null": 58,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_SAME_AUTH",
+      "non_null": 1200,
+      "examples": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "AFS_REP_RELATED_BN",
+      "non_null": 43,
+      "examples": [
+        "AUSTRALIAN BLOODSTOCK",
+        "HOUSE OF CRUISING",
+        "EvK Financial Planning"
+      ],
+      "types": [
+        "str"
+      ]
+    }
+  ],
+  "irregularities": []
+}

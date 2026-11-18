@@ -1,0 +1,124 @@
+{
+  "source_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+  "source_title": "ASIC - Company Dataset",
+  "format": "csv",
+  "fields": [
+    {
+      "source_field": "Company Name",
+      "target_field": "legal_name",
+      "section": "entity",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The 'Company Name' field directly corresponds to the legal name of the entity as registered, which aligns with the ontology definition for 'legal_name'.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "ACN",
+      "target_field": "acn",
+      "section": "entity",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The 'ACN' field represents the Australian Company Number, which matches the ontology definition for 'acn'.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "ABN",
+      "target_field": "abn",
+      "section": "entity",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The 'ABN' field represents the Australian Business Number, which aligns with the ontology definition for 'abn'.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "Status",
+      "target_field": "status",
+      "section": "entity",
+      "confidence": 0.8,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The 'Status' field can be mapped to the 'status' field in the ontology, as it contains values that can be interpreted as active or deregistered, which are part of the defined status enum.",
+      "transformation": "status_enum"
+    },
+    {
+      "source_field": "Date of Registration",
+      "target_field": "date_registered",
+      "section": "entity",
+      "confidence": 0.85,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The 'Date of Registration' field corresponds to the date an entity is registered, which aligns with the ontology definition for 'date_registered'.",
+      "transformation": "date_iso"
+    }
+  ],
+  "unmapped_source_fields": [
+    "Class",
+    "Current Name",
+    "Current Name Indicator",
+    "Current Name Start Date",
+    "Date of Deregistration",
+    "Modified since last report",
+    "Previous State of Registration",
+    "State Registration number",
+    "Sub Class",
+    "Type",
+    "_id"
+  ],
+  "llm_notes": [],
+  "approval": "pending",
+  "agent_framework": "LangGraph",
+  "model_provider": "OpenAI",
+  "model": "gpt-4o-mini",
+  "revision_history": [],
+  "validation": {
+    "holdout_rows": 400,
+    "checks": [
+      {
+        "source_field": "Company Name",
+        "target_field": "legal_name",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "ACN",
+        "target_field": "acn",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "ABN",
+        "target_field": "abn",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 387,
+        "valid_ratio": 0.9675,
+        "pass": true
+      },
+      {
+        "source_field": "Status",
+        "target_field": "status",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "Date of Registration",
+        "target_field": "date_registered",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      }
+    ],
+    "failed_fields": [],
+    "passed": true,
+    "step": "unseen holdout sample"
+  }
+}

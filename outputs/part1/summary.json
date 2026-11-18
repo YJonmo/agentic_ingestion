@@ -1,0 +1,8 @@
+{
+  "portal_count": 5,
+  "records_collected": 200,
+  "shortlist_size": 50,
+  "false_positive_sample_size": 20,
+  "false_positive_estimate": null,
+  "notes": "Hand-check a random sample of 20 shortlisted records to fill in the false-positive estimate."
+}

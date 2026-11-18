@@ -1,0 +1,219 @@
+{
+  "source_id": "fa0b0d71-b8b8-4af8-bc59-0b000ce0d5e4",
+  "title": "ASIC – Credit Licensee Dataset",
+  "format": "tsv",
+  "sample_record_count": 1200,
+  "fields": [
+    {
+      "name": "_id",
+      "non_null": 1200,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "name": "REGISTER_NAME",
+      "non_null": 1200,
+      "examples": [
+        "Credit Licence",
+        "Credit Licence",
+        "Credit Licence"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_NUM",
+      "non_null": 1200,
+      "examples": [
+        "219612",
+        "222213",
+        "222640"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_NAME",
+      "non_null": 1200,
+      "examples": [
+        "RELI CAPITAL LTD",
+        "LA TROBE FINANCIAL ASSET MANAGEMENT LIMITED",
+        "GLOBAL MUTUAL FUNDS PTY LTD"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_START_DT",
+      "non_null": 1200,
+      "examples": [
+        "04/10/2010",
+        "16/03/2011",
+        "14/12/2010"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_END_DT",
+      "non_null": 0,
+      "examples": [],
+      "types": []
+    },
+    {
+      "name": "CRED_LIC_STATUS",
+      "non_null": 1200,
+      "examples": [
+        "APPR",
+        "APPR",
+        "APPR"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_ABN_ACN",
+      "non_null": 1200,
+      "examples": [
+        "80005443292",
+        "27007332363",
+        "20090555436"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_AFSL_NUM",
+      "non_null": 1200,
+      "examples": [
+        "219612",
+        "222213",
+        "222640"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_STATUS_HISTORY",
+      "non_null": 4,
+      "examples": [
+        "Suspended at the request of Licensee/Registrant 18/07/2018 11/07/2020",
+        "Suspended at the request of Licensee/Registrant 19/09/2016 31/01/2017",
+        "Suspended at the request of Licensee/Registrant 01/01/2018 22/11/2018"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_LOCALITY",
+      "non_null": 1200,
+      "examples": [
+        "LEONGATHA",
+        "MELBOURNE",
+        "MASCOT"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_STATE",
+      "non_null": 1200,
+      "examples": [
+        "VIC",
+        "VIC",
+        "NSW"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_PCODE",
+      "non_null": 1200,
+      "examples": [
+        "3953",
+        "3000",
+        "2020"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_LAT",
+      "non_null": 1198,
+      "examples": [
+        "-38.4761569",
+        "-37.8142454",
+        "-33.9289562"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_LNG",
+      "non_null": 1198,
+      "examples": [
+        "145.9458605",
+        "144.9631732",
+        "151.1951782"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_EDRS",
+      "non_null": 1196,
+      "examples": [
+        "AFCA",
+        "AFCA",
+        "AFCA"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_BN",
+      "non_null": 505,
+      "examples": [
+        "PLANNING PARTNERS",
+        "DISCOVERY FINANCIAL MANAGEMENT",
+        "PROFILE FINANCIAL SERVICES"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "CRED_LIC_AUTHORISATIONS",
+      "non_null": 1200,
+      "examples": [
+        "This licence authorises the licensee to:~Engage in credit activities as a credit provider by:~carrying on a business of ",
+        "This licence authorises the licensee to:~Engage in credit activities as a credit provider by:~carrying on a business of ",
+        "This licence authorises the licensee to:~Engage in credit activities other than as a credit provider by:~providing a cre"
+      ],
+      "types": [
+        "str"
+      ]
+    }
+  ],
+  "irregularities": []
+}

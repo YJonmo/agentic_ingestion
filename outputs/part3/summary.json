@@ -1,0 +1,7 @@
+{
+  "link_count": 2646,
+  "unlinked_count": 3998,
+  "observations_loaded": 7200,
+  "precision_estimate": null,
+  "notes": "Only deterministic identifier and normalized-name matches are used for proposal; ambiguous candidates are left in the unlinked queue."
+}

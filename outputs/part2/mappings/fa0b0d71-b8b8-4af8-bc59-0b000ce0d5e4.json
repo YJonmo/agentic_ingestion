@@ -1,0 +1,143 @@
+{
+  "source_id": "fa0b0d71-b8b8-4af8-bc59-0b000ce0d5e4",
+  "source_title": "ASIC – Credit Licensee Dataset",
+  "format": "tsv",
+  "fields": [
+    {
+      "source_field": "CRED_LIC_NAME",
+      "target_field": "legal_name",
+      "section": "entity",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "CRED_LIC_NAME represents the registered name of the credit licensee, which aligns with the definition of legal_name in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "CRED_LIC_ABN_ACN",
+      "target_field": "abn",
+      "section": "entity",
+      "confidence": 0.85,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "CRED_LIC_ABN_ACN contains Australian Business Numbers, which match the pattern defined for abn in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "CRED_LIC_STATE",
+      "target_field": "state",
+      "section": "address",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "CRED_LIC_STATE contains state abbreviations that match the defined enum values for state in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "CRED_LIC_PCODE",
+      "target_field": "postcode",
+      "section": "address",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "CRED_LIC_PCODE represents postal codes, which aligns with the definition of postcode in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "CRED_LIC_START_DT",
+      "target_field": "date_registered",
+      "section": "entity",
+      "confidence": 0.8,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "CRED_LIC_START_DT indicates the start date of the credit license, which corresponds to the date_registered field in the ontology.",
+      "transformation": "date_iso"
+    },
+    {
+      "source_field": "CRED_LIC_STATUS",
+      "target_field": "status",
+      "section": "entity",
+      "confidence": 0.75,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "CRED_LIC_STATUS contains values that can be mapped to the status enum in the ontology, specifically 'APPR' can be interpreted as 'active'.",
+      "transformation": "status_enum"
+    }
+  ],
+  "unmapped_source_fields": [
+    "CRED_LIC_AFSL_NUM",
+    "CRED_LIC_AUTHORISATIONS",
+    "CRED_LIC_BN",
+    "CRED_LIC_EDRS",
+    "CRED_LIC_END_DT",
+    "CRED_LIC_LAT",
+    "CRED_LIC_LNG",
+    "CRED_LIC_LOCALITY",
+    "CRED_LIC_NUM",
+    "CRED_LIC_STATUS_HISTORY",
+    "REGISTER_NAME",
+    "_id"
+  ],
+  "llm_notes": [],
+  "approval": "pending",
+  "agent_framework": "LangGraph",
+  "model_provider": "OpenAI",
+  "model": "gpt-4o-mini",
+  "revision_history": [],
+  "validation": {
+    "holdout_rows": 400,
+    "checks": [
+      {
+        "source_field": "CRED_LIC_NAME",
+        "target_field": "legal_name",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "CRED_LIC_ABN_ACN",
+        "target_field": "abn",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 352,
+        "valid_ratio": 0.88,
+        "pass": true
+      },
+      {
+        "source_field": "CRED_LIC_STATE",
+        "target_field": "state",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "CRED_LIC_PCODE",
+        "target_field": "postcode",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "CRED_LIC_START_DT",
+        "target_field": "date_registered",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "CRED_LIC_STATUS",
+        "target_field": "status",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      }
+    ],
+    "failed_fields": [],
+    "passed": true,
+    "step": "unseen holdout sample"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "source_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+  "title": "ASIC - Company Dataset",
+  "format": "csv",
+  "sample_record_count": 1200,
+  "fields": [
+    {
+      "name": "_id",
+      "non_null": 1200,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "name": "Company Name",
+      "non_null": 1200,
+      "examples": [
+        "LOVINI HOLDINGS PTY LTD",
+        "MONAKA PTY LTD",
+        "CHRISTENSEN & ASSOCIATES PTY LTD"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ACN",
+      "non_null": 1200,
+      "examples": [
+        "000000019",
+        "000000019",
+        "000000028"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Type",
+      "non_null": 1200,
+      "examples": [
+        "APTY",
+        "APTY",
+        "APTY"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Class",
+      "non_null": 1200,
+      "examples": [
+        "LMSH",
+        "LMSH",
+        "LMSH"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Sub Class",
+      "non_null": 1200,
+      "examples": [
+        "PROP",
+        "PROP",
+        "PSTC"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Status",
+      "non_null": 1200,
+      "examples": [
+        "REGD",
+        "REGD",
+        "REGD"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Date of Registration",
+      "non_null": 1200,
+      "examples": [
+        "08/01/1990",
+        "08/01/1990",
+        "15/09/1987"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Date of Deregistration",
+      "non_null": 11,
+      "examples": [
+        "13/03/2026",
+        "24/06/2026",
+        "18/12/2025"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Previous State of Registration",
+      "non_null": 1199,
+      "examples": [
+        "NSW",
+        "NSW",
+        "NSW"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "State Registration number",
+      "non_null": 1200,
+      "examples": [
+        "46869041",
+        "46869041",
+        "40398926"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Modified since last report",
+      "non_null": 2,
+      "examples": [
+        "Y",
+        "Y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Current Name Indicator",
+      "non_null": 537,
+      "examples": [
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ABN",
+      "non_null": 1200,
+      "examples": [
+        "89000000019",
+        "89000000019",
+        "91000000028"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Current Name",
+      "non_null": 663,
+      "examples": [
+        "MONAKA PTY LTD",
+        "CHRISTENSEN & ASSOCIATES PTY LTD",
+        "W & L COMPUTER CONSULTANTS PTY LTD"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Current Name Start Date",
+      "non_null": 646,
+      "examples": [
+        "28/01/2016",
+        "24/09/2007",
+        "28/03/1984"
+      ],
+      "types": [
+        "str"
+      ]
+    }
+  ],
+  "irregularities": []
+}

@@ -1,0 +1,141 @@
+{
+  "engine_version": "part2-v2",
+  "framework": "LangGraph",
+  "model_provider": "OpenAI",
+  "sources": [
+    {
+      "source_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+      "title": "ASIC - Company Dataset",
+      "format": "csv",
+      "resource_id": "5c3914e6-413e-4a2c-b890-bf8efe3eabf2",
+      "url": "https://data.gov.au/data/dataset/7b8656f9-606d-4337-af29-66b89b2eeefb/resource/5c3914e6-413e-4a2c-b890-bf8efe3eabf2/download/company_202610.csv",
+      "licence": "unknown",
+      "approval": "pending"
+    },
+    {
+      "source_id": "fa0b0d71-b8b8-4af8-bc59-0b000ce0d5e4",
+      "title": "ASIC – Credit Licensee Dataset",
+      "format": "tsv",
+      "resource_id": "3abf1383-c4e5-4c1a-8331-8434b17b6f10",
+      "url": "https://data.gov.au/data/dataset/fa0b0d71-b8b8-4af8-bc59-0b000ce0d5e4/resource/3abf1383-c4e5-4c1a-8331-8434b17b6f10/download/credit_lic_202610.tsv",
+      "licence": "unknown",
+      "approval": "pending"
+    },
+    {
+      "source_id": "a7bbbf64-e2ef-4d96-9fb4-0aea73ada2af",
+      "title": "ASIC – Australian Financial Services Authorised Representative Dataset",
+      "format": "xlsx",
+      "resource_id": "2572b6b0-31f0-49ca-bb67-55cfe9986b58",
+      "url": "https://data.gov.au/data/dataset/a7bbbf64-e2ef-4d96-9fb4-0aea73ada2af/resource/2572b6b0-31f0-49ca-bb67-55cfe9986b58/download/afs_rep_202610.xlsx",
+      "licence": "unknown",
+      "approval": "pending"
+    },
+    {
+      "source_id": "8bb7ea33-f2a4-4c5d-97bd-f26c9845563f",
+      "error": "404 Client Error: Not Found for url: https://data.gov.au/geoserver/sensia-pty-ltd-declarations-multiple-february-2023/wfs?request=GetFeature&typeName=ckan_8bb7ea33_f2a4_4c5d_97bd_f26c9845563f&outputFormat=json"
+    },
+    {
+      "source_id": "cbc350fb-d09f-4a4b-bc56-3d8088f4aba9",
+      "error": "ZIP contains no supported tabular or XML member"
+    },
+    {
+      "source_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+      "title": "ASIC - Business Names Dataset",
+      "format": "csv",
+      "resource_id": "55ad4b1c-5eeb-44ea-8b29-d410da431be3",
+      "url": "https://data.gov.au/data/dataset/bc515135-4bb6-4d50-957a-3713709a76d3/resource/55ad4b1c-5eeb-44ea-8b29-d410da431be3/download/business_names_202610.csv",
+      "licence": "unknown",
+      "approval": "pending"
+    },
+    {
+      "source_id": "ff6905d6-9d5d-4ef1-8478-72b833864fb7",
+      "title": "ACNC 2023 Annual Information Statement (AIS) Data",
+      "format": "csv",
+      "resource_id": "2b0fb746-57c5-4523-bb4c-74b7b78279d9",
+      "url": "https://data.gov.au/data/dataset/ff6905d6-9d5d-4ef1-8478-72b833864fb7/resource/2b0fb746-57c5-4523-bb4c-74b7b78279d9/download/datadotgov_ais23.csv",
+      "licence": "unknown",
+      "approval": "pending"
+    },
+    {
+      "source_id": "db8def1b-b3ba-4536-98eb-60c99e5495e5",
+      "title": "ACNC 2021 Annual Information Statement (AIS) Data",
+      "format": "csv",
+      "resource_id": "bbb19fa5-2f63-49cb-96b2-523e25828f27",
+      "url": "https://data.gov.au/data/dataset/db8def1b-b3ba-4536-98eb-60c99e5495e5/resource/bbb19fa5-2f63-49cb-96b2-523e25828f27/download/datadotgov_ais21.csv",
+      "licence": "unknown",
+      "approval": "pending"
+    }
+  ],
+  "results": [
+    {
+      "source_id": "7b8656f9-606d-4337-af29-66b89b2eeefb",
+      "sample_rows": 1200,
+      "mapped_fields": 5,
+      "observations": 1200,
+      "validation_passed": true,
+      "model": "gpt-4o-mini",
+      "revisions": 0,
+      "approval": "pending"
+    },
+    {
+      "source_id": "fa0b0d71-b8b8-4af8-bc59-0b000ce0d5e4",
+      "sample_rows": 1200,
+      "mapped_fields": 6,
+      "observations": 1200,
+      "validation_passed": true,
+      "model": "gpt-4o-mini",
+      "revisions": 0,
+      "approval": "pending"
+    },
+    {
+      "source_id": "a7bbbf64-e2ef-4d96-9fb4-0aea73ada2af",
+      "sample_rows": 1200,
+      "mapped_fields": 7,
+      "observations": 1200,
+      "validation_passed": true,
+      "model": "gpt-4o-mini",
+      "revisions": 1,
+      "approval": "pending"
+    },
+    {
+      "source_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+      "sample_rows": 1200,
+      "mapped_fields": 4,
+      "observations": 1200,
+      "validation_passed": true,
+      "model": "gpt-4o-mini",
+      "revisions": 0,
+      "approval": "pending"
+    },
+    {
+      "source_id": "ff6905d6-9d5d-4ef1-8478-72b833864fb7",
+      "sample_rows": 1200,
+      "mapped_fields": 6,
+      "observations": 1200,
+      "validation_passed": true,
+      "model": "gpt-4o-mini",
+      "revisions": 0,
+      "approval": "pending"
+    },
+    {
+      "source_id": "db8def1b-b3ba-4536-98eb-60c99e5495e5",
+      "sample_rows": 1200,
+      "mapped_fields": 4,
+      "observations": 1200,
+      "validation_passed": true,
+      "model": "gpt-4o-mini",
+      "revisions": 0,
+      "approval": "pending"
+    }
+  ],
+  "errors": [
+    {
+      "source_id": "8bb7ea33-f2a4-4c5d-97bd-f26c9845563f",
+      "error": "404 Client Error: Not Found for url: https://data.gov.au/geoserver/sensia-pty-ltd-declarations-multiple-february-2023/wfs?request=GetFeature&typeName=ckan_8bb7ea33_f2a4_4c5d_97bd_f26c9845563f&outputFormat=json"
+    },
+    {
+      "source_id": "cbc350fb-d09f-4a4b-bc56-3d8088f4aba9",
+      "error": "ZIP contains no supported tabular or XML member"
+    }
+  ]
+}

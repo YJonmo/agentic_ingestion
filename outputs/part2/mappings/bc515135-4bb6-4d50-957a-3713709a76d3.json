@@ -1,0 +1,103 @@
+{
+  "source_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+  "source_title": "ASIC - Business Names Dataset",
+  "format": "csv",
+  "fields": [
+    {
+      "source_field": "BN_NAME",
+      "target_field": "trading_name",
+      "section": "entity",
+      "confidence": 0.85,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The BN_NAME field represents the name under which the business operates, aligning with the definition of 'trading_name' in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "BN_ABN",
+      "target_field": "abn",
+      "section": "entity",
+      "confidence": 0.9,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The BN_ABN field contains Australian Business Numbers, which match the definition and pattern specified for 'abn' in the ontology.",
+      "transformation": "identity"
+    },
+    {
+      "source_field": "BN_STATUS",
+      "target_field": "status",
+      "section": "entity",
+      "confidence": 0.75,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The BN_STATUS field indicates the registration status of the business, which can be mapped to the 'status' enum in the ontology, although the exact values may need normalization.",
+      "transformation": "status_enum"
+    },
+    {
+      "source_field": "BN_REG_DT",
+      "target_field": "date_registered",
+      "section": "entity",
+      "confidence": 0.8,
+      "confidence_basis": "LLM self-assessment; uncalibrated; separate from held-out validation",
+      "rationale": "The BN_REG_DT field represents the registration date of the business, which corresponds directly to the 'date_registered' field in the ontology.",
+      "transformation": "date_iso"
+    }
+  ],
+  "unmapped_source_fields": [
+    "BN_CANCEL_DT",
+    "BN_STATE_NUM",
+    "BN_STATE_OF_REG",
+    "REGISTER_NAME",
+    "_id"
+  ],
+  "llm_notes": [
+    "The mapping is based on the definitions and examples provided in the dataset and ontology.",
+    "Fields like BN_CANCEL_DT and BN_STATE_NUM were not mapped due to ambiguity or lack of direct correspondence in the ontology."
+  ],
+  "approval": "pending",
+  "agent_framework": "LangGraph",
+  "model_provider": "OpenAI",
+  "model": "gpt-4o-mini",
+  "revision_history": [],
+  "validation": {
+    "holdout_rows": 400,
+    "checks": [
+      {
+        "source_field": "BN_NAME",
+        "target_field": "trading_name",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "BN_ABN",
+        "target_field": "abn",
+        "holdout_rows": 400,
+        "nonempty": 247,
+        "valid": 247,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "BN_STATUS",
+        "target_field": "status",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      },
+      {
+        "source_field": "BN_REG_DT",
+        "target_field": "date_registered",
+        "holdout_rows": 400,
+        "nonempty": 400,
+        "valid": 400,
+        "valid_ratio": 1.0,
+        "pass": true
+      }
+    ],
+    "failed_fields": [],
+    "passed": true,
+    "step": "unseen holdout sample"
+  }
+}

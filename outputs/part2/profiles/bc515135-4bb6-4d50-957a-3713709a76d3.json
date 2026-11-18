@@ -1,0 +1,117 @@
+{
+  "source_id": "bc515135-4bb6-4d50-957a-3713709a76d3",
+  "title": "ASIC - Business Names Dataset",
+  "format": "csv",
+  "sample_record_count": 1200,
+  "fields": [
+    {
+      "name": "_id",
+      "non_null": 1200,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "name": "REGISTER_NAME",
+      "non_null": 1200,
+      "examples": [
+        "BUSINESS NAMES",
+        "BUSINESS NAMES",
+        "BUSINESS NAMES"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_NAME",
+      "non_null": 1200,
+      "examples": [
+        "HOMSAFE",
+        "COASTAL  EARTH WORKS",
+        "Easy Settlements"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_STATUS",
+      "non_null": 1200,
+      "examples": [
+        "Registered",
+        "Registered",
+        "Registered"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_REG_DT",
+      "non_null": 1200,
+      "examples": [
+        "07/02/2019",
+        "30/05/2019",
+        "06/03/2020"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_CANCEL_DT",
+      "non_null": 128,
+      "examples": [
+        "09/04/2026",
+        "02/10/2025",
+        "06/11/2025"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_STATE_NUM",
+      "non_null": 218,
+      "examples": [
+        "BN98535290",
+        "B2160825G",
+        "B1698762E"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_STATE_OF_REG",
+      "non_null": 218,
+      "examples": [
+        "NSW",
+        "VIC",
+        "VIC"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "BN_ABN",
+      "non_null": 926,
+      "examples": [
+        "56098948915",
+        "88573118334",
+        "47613497233"
+      ],
+      "types": [
+        "str"
+      ]
+    }
+  ],
+  "irregularities": []
+}

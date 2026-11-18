@@ -1,0 +1,1113 @@
+{
+  "source_id": "ff6905d6-9d5d-4ef1-8478-72b833864fb7",
+  "title": "ACNC 2023 Annual Information Statement (AIS) Data",
+  "format": "csv",
+  "sample_record_count": 1200,
+  "fields": [
+    {
+      "name": "_id",
+      "non_null": 1200,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "name": "abn",
+      "non_null": 1200,
+      "examples": [
+        "11000047950",
+        "11000073870",
+        "11000761571"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "charity name",
+      "non_null": 1200,
+      "examples": [
+        "Sydney Missionary & Bible College",
+        "Integricare Limited",
+        "AUSTRALIANS IN MISSION TOGETHER"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "registration status",
+      "non_null": 1200,
+      "examples": [
+        "Registered",
+        "Registered",
+        "Registered"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "charity website",
+      "non_null": 813,
+      "examples": [
+        "www.smbc.edu.au",
+        "www.integricare.org.au",
+        "www.amtglobal.com.au"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "charity size",
+      "non_null": 1200,
+      "examples": [
+        "Large",
+        "Large",
+        "Large"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "basic religious charity",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "ais due date",
+      "non_null": 1200,
+      "examples": [
+        "30/06/2024",
+        "31/01/2024",
+        "30/06/2024"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "date ais received",
+      "non_null": 1200,
+      "examples": [
+        "25/06/2024",
+        "18/01/2024",
+        "30/08/2024"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "financial report date received",
+      "non_null": 799,
+      "examples": [
+        "25/06/2024",
+        "18/01/2024",
+        "30/08/2024"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "conducted activities",
+      "non_null": 1200,
+      "examples": [
+        "y",
+        "y",
+        "y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "why charity did not conduct activities",
+      "non_null": 48,
+      "examples": [
+        "Yagoona Baptist Church was planted under the name of Graceway Church and so is no longer operating.",
+        "aging committee as well as clients",
+        "COVID & restrictions"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "international activities details",
+      "non_null": 52,
+      "examples": [
+        "Provided the copyright for our popular daily devotional, which is published in simple English and/or translated into loc",
+        "We provide leadership development training, resources and support to Christian Surfers missions to enable them to reach ",
+        "Preaching, speaking, ministering at churches, running ministry courses - only 'online' and via zoom"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "international activities undertaken - transferring goods or ser",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "international activities undertaken - operating overseas includ",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "other international activities",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "other international activities description",
+      "non_null": 12,
+      "examples": [
+        "Our programme is delivering from Australia and made available to access from other countries like prior years'. We are c",
+        "The Mill supports artists to undertake residencies with our partner organisations here and overseas. In 2023, we ran two",
+        "Buddhist teaching on Zoom"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "how purposes were pursued",
+      "non_null": 1151,
+      "examples": [
+        "Conducting an interdenominational community based Bible College with a strong missions and crosscultural focus to train ",
+        "We provided early education and welfare services and care for families in need.",
+        "AMT partners with churches to educate, motivate and facilitate Christians for global mission. AMT is a comprehensive ser"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "staff - full time",
+      "non_null": 1200,
+      "examples": [
+        "35",
+        "42",
+        "1"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "staff - part time",
+      "non_null": 1200,
+      "examples": [
+        "15",
+        "84",
+        "3"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "staff - casual",
+      "non_null": 1200,
+      "examples": [
+        "25",
+        "84",
+        "1"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total full time equivalent staff",
+      "non_null": 1200,
+      "examples": [
+        "54",
+        "131",
+        "2.73"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "staff - volunteers",
+      "non_null": 1200,
+      "examples": [
+        "1",
+        "0",
+        "3"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "cash or accrual",
+      "non_null": 723,
+      "examples": [
+        "Cash",
+        "Cash",
+        "Accrual"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "type of financial statement",
+      "non_null": 310,
+      "examples": [
+        "Special purpose financial statements",
+        "Special purpose financial statements",
+        "Special purpose financial statements"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "report consolidated with more than one entity",
+      "non_null": 310,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "charity report has a modification",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "type of report modification",
+      "non_null": 25,
+      "examples": [
+        "Qualified/qualification",
+        "Qualified/qualification",
+        "Qualified/qualification"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "charity has reportable related party transactions",
+      "non_null": 1036,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Relevant transactions",
+      "non_null": 165,
+      "examples": [
+        "Fees paid to a related party for providing goods or services to the charity; Salary/wages paid to a related party’s rela",
+        "Fees paid to a related party for providing goods or services to the charity; Loans from/to a related party",
+        "Fees paid to a related party for providing goods or services to the charity; Salary/wages paid to a related party’s rela"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Other details",
+      "non_null": 30,
+      "examples": [
+        "Payment of grants and expenses to medical Research",
+        "Please see Note 19 of the Financial statements for details",
+        "The Company pays certain audit  property and other administration expenses on behalf of The Church of England Deaconess "
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Other Relevant details",
+      "non_null": 90,
+      "examples": [
+        "Related party transactions are on page 36-41 of the financial report.",
+        "Austin & IBAS",
+        "The president has provided small loans throughout the year to sustain the charities operations when needed"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fin report from",
+      "non_null": 1029,
+      "examples": [
+        "01/01/2023",
+        "01/07/2022",
+        "01/01/2023"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fin report to",
+      "non_null": 1029,
+      "examples": [
+        "31/12/2023",
+        "30/06/2023",
+        "31/12/2023"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "revenue from government",
+      "non_null": 1200,
+      "examples": [
+        "0",
+        "10850204",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "donations and bequests",
+      "non_null": 1200,
+      "examples": [
+        "1158030",
+        "121715",
+        "5200424"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "revenue from goods and services",
+      "non_null": 1200,
+      "examples": [
+        "5060193",
+        "4598577",
+        "45646"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "revenue from investments",
+      "non_null": 1200,
+      "examples": [
+        "101073",
+        "353488",
+        "250693"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "all other revenue",
+      "non_null": 1200,
+      "examples": [
+        "61637",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total revenue",
+      "non_null": 1200,
+      "examples": [
+        "6380933",
+        "15923984",
+        "5496763"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "other income",
+      "non_null": 1200,
+      "examples": [
+        "0",
+        "339369",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total gross income",
+      "non_null": 1200,
+      "examples": [
+        "6380933",
+        "16263353",
+        "5496763"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "employee expenses",
+      "non_null": 1200,
+      "examples": [
+        "3060838",
+        "12481744",
+        "217694"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "interest expenses",
+      "non_null": 1200,
+      "examples": [
+        "3204",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "grants and donations made for use in Australia",
+      "non_null": 1200,
+      "examples": [
+        "320860",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "grants and donations made for use outside Australia",
+      "non_null": 1200,
+      "examples": [
+        "0",
+        "0",
+        "5100597"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "all other expenses",
+      "non_null": 1200,
+      "examples": [
+        "4254770",
+        "4041677",
+        "265573"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total expenses",
+      "non_null": 1200,
+      "examples": [
+        "7639672",
+        "16523421",
+        "5583864"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "net surplus/deficit",
+      "non_null": 1200,
+      "examples": [
+        "-1258739",
+        "-260068",
+        "-87101"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "other comprehensive income",
+      "non_null": 1200,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total comprehensive income",
+      "non_null": 1200,
+      "examples": [
+        "-1258739",
+        "-260068",
+        "-87101"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total current assets",
+      "non_null": 1200,
+      "examples": [
+        "2218196",
+        "4818318",
+        "2838020"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "non-current loans receivable",
+      "non_null": 1200,
+      "examples": [
+        "0",
+        "0",
+        "28535"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "other non-current assets",
+      "non_null": 1200,
+      "examples": [
+        "66855076",
+        "19236609",
+        "6943858"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total non-current assets",
+      "non_null": 1200,
+      "examples": [
+        "66855076",
+        "19236609",
+        "6972393"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total assets",
+      "non_null": 1200,
+      "examples": [
+        "69073272",
+        "24054927",
+        "9810413"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total current liabilities",
+      "non_null": 1200,
+      "examples": [
+        "1236485",
+        "2891573",
+        "133730"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "non-current loans payable",
+      "non_null": 1200,
+      "examples": [
+        "0",
+        "0",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "other non-current liabilities",
+      "non_null": 1200,
+      "examples": [
+        "28926",
+        "254046",
+        "2974196"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total non-current liabilities",
+      "non_null": 1200,
+      "examples": [
+        "28926",
+        "254046",
+        "2974196"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "total liabilities",
+      "non_null": 1200,
+      "examples": [
+        "1265411",
+        "3145619",
+        "3107926"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "net assets/liabilities",
+      "non_null": 1200,
+      "examples": [
+        "67807861",
+        "20909308",
+        "6702487"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "coop financial report submitted to regulator",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "incorporated association",
+      "non_null": 1200,
+      "examples": [
+        "y",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - act",
+      "non_null": 13,
+      "examples": [
+        "A00887",
+        "A03527",
+        "A00951"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - nsw",
+      "non_null": 134,
+      "examples": [
+        "INC1803571",
+        "Y0040815",
+        "Y0504500"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - nt",
+      "non_null": 9,
+      "examples": [
+        "00531C/IA",
+        "00452C/IA",
+        "00702C/IA"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - qld",
+      "non_null": 70,
+      "examples": [
+        "IA18344",
+        "IA11750",
+        "IA18582"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - sa",
+      "non_null": 37,
+      "examples": [
+        "A13020",
+        "A4271",
+        "A37859"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - tas",
+      "non_null": 12,
+      "examples": [
+        "01874C",
+        "00329C",
+        "00280C"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - vic",
+      "non_null": 119,
+      "examples": [
+        "A0050188J",
+        "A0011866W",
+        "A0009802S"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "association number - wa",
+      "non_null": 60,
+      "examples": [
+        "A1002340R",
+        "A1002599M",
+        "A1004139L"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - act",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - act",
+      "non_null": 6,
+      "examples": [
+        "19000371",
+        "19000409",
+        "19000692"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - nsw",
+      "non_null": 1200,
+      "examples": [
+        "y",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - nsw",
+      "non_null": 102,
+      "examples": [
+        "11337",
+        "10602",
+        "00000"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - nt",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - qld",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - qld",
+      "non_null": 48,
+      "examples": [
+        "CH2136",
+        "CP4118",
+        "CP5611"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - sa",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - sa",
+      "non_null": 17,
+      "examples": [
+        "CCP2884",
+        "CCP3569",
+        "CCP2878"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - tas",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - tas",
+      "non_null": 15,
+      "examples": [
+        "C/10396",
+        "C/10648",
+        "C/10325"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - vic",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - vic",
+      "non_null": 53,
+      "examples": [
+        "FR0016862",
+        "13804",
+        "10723.15"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - wa",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "n"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising number - wa",
+      "non_null": 31,
+      "examples": [
+        "CC20301",
+        "CC17627",
+        "CC18030"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "fundraising - online",
+      "non_null": 1200,
+      "examples": [
+        "n",
+        "n",
+        "y"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Key Management Personnel",
+      "non_null": 141,
+      "examples": [
+        "No",
+        "Yes",
+        "No"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Number of Key Management Personnel",
+      "non_null": 141,
+      "examples": [
+        "0",
+        "21",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "Total paid to Key Management Personnel",
+      "non_null": 141,
+      "examples": [
+        "0",
+        "1375592",
+        "0"
+      ],
+      "types": [
+        "str"
+      ]
+    },
+    {
+      "name": "assets and liabilities description",
+      "non_null": 321,
+      "examples": [
+        "Assets are a small amount of cash in the bank and then capital equipment  Liabilities are non current loans owed",
+        "Assets - Bank accounts $112,134.01 & Plant and equipment $4000",
+        "Cash at bank $22"
+      ],
+      "types": [
+        "str"
+      ]
+    }
+  ],
+  "irregularities": []
+}
